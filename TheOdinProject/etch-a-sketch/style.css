@@ -1,0 +1,74 @@
+@import url("normalize.css");
+
+body {
+  margin: auto;
+  margin-top: 5vh;
+  max-width: max-content;
+  max-height: max-content;
+  display: flex;
+}
+
+.grid {
+  height: 720px;
+  width: 720px;
+  display: grid;
+}
+
+.pixel {
+  background-color: #dddddd;
+  height: 1fr;
+  width: 1fr;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options__buttons {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 1rem 2rem 1rem 2rem;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.options__buttons:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.options__buttons:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+}
+
+.options__buttons:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.options__buttons--color {
+  height: 7rem;
+}

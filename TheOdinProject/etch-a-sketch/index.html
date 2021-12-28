@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etch-a-Sketch</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="options">
+      <input
+        class="options__buttons options__buttons--color"
+        type="color"
+        value="#111"
+      />
+      <button class="options__buttons options__buttons--single" type="button">
+        Single color
+      </button>
+      <button class="options__buttons options__buttons--random" type="button">
+        Randomized color
+      </button>
+      <button class="options__buttons options__buttons--erase" type="button">
+        Eraser
+      </button>
+      <button class="options__buttons options__buttons--clear" type="button">
+        Clear
+      </button>
+    </div>
+    <grid class="grid"></grid>
+  </body>
+</html>
