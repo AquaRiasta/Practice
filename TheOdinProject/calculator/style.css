@@ -1,0 +1,179 @@
+/* ===== LAYOUT ===== */
+
+:root {
+  --button-size: 10vh;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, var(--button-size));
+  grid-template-rows: calc(var(--button-size) * 1.5) repeat(
+      5,
+      var(--button-size)
+    );
+}
+
+.grid > .screen {
+  grid-area: 1 / 1 / 2 / -1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#input {
+  height: var(--button-size);
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-bottom: 2vh;
+  font-size: 3rem;
+}
+
+#history {
+  height: calc(var(--button-size) * 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-top: 1.5vh;
+}
+
+#equal {
+  grid-area: 6 / 3 / 7 / 5;
+}
+
+/* ===== CUSTOM BUTTON ===== */
+
+.grid > div {
+  align-items: center;
+  /* background-color: #EEF2FF; */
+  background-position: 0 0;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #676fa3;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
+    none;
+  padding: 2px 12px;
+  margin: 0.25vw;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.grid > div:active,
+.grid > div:hover,
+.grid > div:focus {
+  outline: 0;
+}
+
+.grid > div:active {
+  background-color: #676fa3;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.grid > div:hover {
+  background-color: #eef2ff;
+}
+
+.grid > div:active:hover,
+.grid > div:focus:hover,
+.grid > div:focus,
+.grid > div.active {
+  background-color: #676fa3;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+screen.screen {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #676fa3;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  margin: 0.25vw;
+  font-family: monospace;
+}
+
+/* ===== BUTTONS CUSTOMIZATION ===== */
+
+.grid > div {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+div.operator {
+  color: #ff5959;
+}
+
+div.operator:active,
+div.operator:hover,
+div.operator:focus {
+  outline: 0;
+}
+
+div.operator:hover {
+  background-color: #eef2ff;
+}
+
+div.operator:active:hover,
+div.operator:focus:hover,
+div.operator:focus,
+div.operator.active {
+  background-color: #ff5959;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+div#equal {
+  color: white;
+  background-color: #ff5959;
+}
+
+div#equal:active,
+div#equal:hover,
+div#equal:focus {
+  outline: 0;
+}
+
+div#equal:hover {
+  background-color: #fd6c6c;
+}
+
+div#equal:active:hover,
+div#equal:focus:hover,
+div#equal:focus,
+div#equal.active {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ff5959;
+}
