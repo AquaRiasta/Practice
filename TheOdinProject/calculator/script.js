@@ -104,7 +104,7 @@ function process(key) {
   } else if (/\%/.test(key)) {
     let res = calc(values.input + "*100");
     history.textContent = values.input;
-    values.input = res.toString().match(/[\+\-\*\/]{0,1}\d+/g)[0];
+    values.input = res.toString().match(/[\+\-\*\/]{0,1}\d+/g)[0] + "%";
     input.textContent = values.input;
   } else if (/\./.test(key)) {
     if (/\.\d*$/.test(values.input)) return;
