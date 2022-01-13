@@ -42,6 +42,14 @@ body {
   align-content: space-between;
 }
 
+.disable-selection {
+  display: hidden;
+  width: calc(var(--box-size) * 3);
+  height: calc(var(--box-size) * 3);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .box {
   flex: 1 0 calc(30%);
   width: var(--box-size);
