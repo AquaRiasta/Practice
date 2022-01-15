@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body class="todo-app">
+    <div class="menu-window">
+      <div class="user-info"></div>
+      <div class="priority-container">
+        <div class="heading heading__project">Priority</div>
+        <div class="project__item">
+          <input
+            type="radio"
+            name="project"
+            id="priority-high"
+            value="priority-high"
+          />
+          <label for="priority-high">
+            <span class="icon">🟥</span>
+            <span class="label">High</span>
+          </label>
+        </div>
+        <div class="project__item">
+          <input
+            type="radio"
+            name="project"
+            id="priority-medium"
+            value="priority-medium"
+          />
+          <label for="priority-medium">
+            <span class="icon">🟨</span>
+            <span class="label">Medium</span>
+          </label>
+        </div>
+        <div class="project__item">
+          <input
+            type="radio"
+            name="project"
+            id="priority-low"
+            value="priority-low"
+          />
+          <label for="priority-low">
+            <span class="icon">🟦</span>
+            <span class="label">Low</span>
+          </label>
+        </div>
+        <div class="project__item">
+          <input
+            type="radio"
+            name="project"
+            id="priority-undefined"
+            value="priority-undefined"
+          />
+          <label for="priority-undefined">
+            <span class="icon">⬜️</span>
+            <span class="label">Undefined</span>
+          </label>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="heading heading__project">Projects</div>
+        <div class="list">
+          <div class="project__item">
+            <input
+              type="radio"
+              name="project"
+              id="project-programming"
+              value="project-programming"
+            />
+            <label for="project-programming">
+              <span class="icon">🔲</span>
+              <span class="label">Programming</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="add-project">
+        <button>
+          <span class="icon">+</span><span class="label">New Project</span>
+        </button>
+      </div>
+    </div>
+    <div class="tasks-window">
+      <div class="heading heading__main">High</div>
+      <div class="task__list task__list--unfinished">
+        <div class="task__item">
+          <input type="radio" name="id" id="id2" value="finished" />
+          <label for="id"><span class="label">Task</span></label>
+        </div>
+        <div class="task__item">
+          <input type="radio" name="id" id="id" value="finished" />
+          <label for="id"><span class="label">Task</span></label>
+        </div>
+      </div>
+      <div class="task__list task__list--finished">
+        <div class="task__item">
+          <input type="radio" name="id" id="id2" value="finished" />
+          <label for="id"><span class="label">Task</span></label>
+        </div>
+        <div class="task__item">
+          <input type="radio" name="id" id="id" value="finished" />
+          <label for="id"><span class="label">Task</span></label>
+        </div>
+      </div>
+      <div class="heading__new"></div>
+    </div>
+    <div class="details-window">
+      <div class="task__item">
+        <input type="radio" name="id" id="id2" value="finished" />
+        <label for="id2">O</label>
+        <span class="heading__task">Task</span>
+      </div>
+      <div class="task__priority">High</div>
+      <div class="task__description">description</div>
+      <div class="task__checklist">
+        <div class="checklist__item">
+          <input type="radio" name="id" id="id2" value="finished" />
+          <label for="id2">O</label>
+        </div>
+        <div class="heading__new--checklist">New item</div>
+      </div>
+      <div class="task__deadline">Deadline</div>
+      <div class="task__note">some note......</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@import "~normalize-scss/sass/_normalize.scss";
+
+@import "./base/typography";
+
+@import "./components/menu";
+@import "./components/tasks";
+@import "./components/details";
+
+@import "./pages/home";
