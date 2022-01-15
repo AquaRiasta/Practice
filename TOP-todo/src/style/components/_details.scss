@@ -1,4 +1,59 @@
 .details-window {
   flex: 1;
   padding: 1rem;
+
+  .heading {
+    &__task {
+      margin-top: 1rem;
+      font-family: $font-heading;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    &__checklist {
+      font-family: $font-heading;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    &__new--checklist {
+      font-family: $font-heading;
+      font-size: 1rem;
+      padding: 0rem .5rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+  }
+
+  .task {
+    &__details {
+      font-family: $font-body;
+      margin-bottom: 1rem;
+      color: $color-grey;
+    }
+
+    &__description {
+      font-family: $font-body;
+      margin-bottom: 1rem;
+      resize: none;
+      width: 100%;
+      height: 10%;
+    }
+
+    &__checklist {
+      margin-bottom: 1rem;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .checklist__item {
+        padding-left: 1rem;
+        padding-bottom: .2rem;
+        font-family: $font-body;
+      }
+    }
+  }
 }

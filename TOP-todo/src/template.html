@@ -87,20 +87,24 @@
       <div class="heading heading__main">High</div>
       <div class="task__list task__list--unfinished">
         <div class="task__item">
+          <button></button>
           <input type="radio" name="id" id="id2" value="finished" />
           <label for="id"><span class="label">Task</span></label>
         </div>
         <div class="task__item">
+          <button></button>
           <input type="radio" name="id" id="id" value="finished" />
           <label for="id"><span class="label">Task</span></label>
         </div>
       </div>
       <div class="task__list task__list--finished">
         <div class="task__item">
+          <button></button>
           <input type="radio" name="id" id="id2" value="finished" />
           <label for="id"><span class="label">Task</span></label>
         </div>
         <div class="task__item">
+          <button></button>
           <input type="radio" name="id" id="id" value="finished" />
           <label for="id"><span class="label">Task</span></label>
         </div>
@@ -108,19 +112,23 @@
       <div class="heading__new"></div>
     </div>
     <div class="details-window">
-      <div class="task__item">
-        <input type="radio" name="id" id="id2" value="finished" />
-        <label for="id2">O</label>
-        <span class="heading__task">Task</span>
-      </div>
-      <div class="task__priority">High</div>
-      <div class="task__description">description</div>
+      <div class="heading__task">Task</div>
+      <div class="task__details">High - Unfinished</div>
+      <textarea
+        name="task__description"
+        id="task__description"
+        class="task__description"
+        placeholder="Description"
+      ></textarea>
       <div class="task__checklist">
-        <div class="checklist__item">
-          <input type="radio" name="id" id="id2" value="finished" />
-          <label for="id2">O</label>
-        </div>
-        <div class="heading__new--checklist">New item</div>
+        <div class="heading__checklist">Checklist</div>
+        <ul>
+          <li class="checklist__item">
+            <input type="radio" name="id" id="id2" value="finished" />
+            <label for="id2">Something</label>
+          </li>
+        </ul>
+        <button class="heading__new--checklist">+ New item</button>
       </div>
       <div class="task__deadline">Deadline</div>
       <div class="task__note">some note......</div>

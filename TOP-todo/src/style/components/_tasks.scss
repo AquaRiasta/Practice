@@ -3,6 +3,8 @@
   padding: 1rem 2rem;
   border-left: 1px solid grey;
   border-right: 1px solid grey;
+  overflow: hidden;
+  overflow-y: hidden;
 
   .heading {
     &__main {
@@ -20,6 +22,8 @@
       margin: 0.5rem 0;
       height: 3rem;
       border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
 
       input {
         display: none;
@@ -43,6 +47,28 @@
           margin: 0 0.7rem 0 1rem;
           padding-bottom: 2px;
         }
+      }
+
+      button {
+        cursor: pointer;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 0.2rem;
+        margin: 0 1rem;
+      }
+    }
+
+    &__list {
+      &--finished button {
+        background-color: $color-grey;
+      }
+
+      &--finished .label {
+        text-decoration: line-through;
+      }
+
+      &--unfinished button {
+        background-color: $color-white;
       }
     }
   }
