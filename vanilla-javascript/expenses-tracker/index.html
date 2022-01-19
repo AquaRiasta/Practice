@@ -16,28 +16,30 @@
         <div id="balance">
           <div id="income">
             <h3 class="heading__paragraph">INCOME</h3>
-            <h3 class="total-amount" id="income-amount">$7000.00</h3>
+            <h3 class="positive" id="income-amount">7000.00</h3>
           </div>
           <div id="expense">
-            <h3 class="heading__paragraph">INCOME</h3>
-            <h3 class="total-amount" id="expense-amount">$7000.00</h3>
+            <h3 class="heading__paragraph">EXPENSE</h3>
+            <h3 class="negative" id="expense-amount">7000.00</h3>
           </div>
         </div>
       </section>
+      <button class="button__create">➕ New transaction</button>
     </section>
     <section class="scrollable">
-      <section id="history">
-        <h2 class="heading__sub">History</h2>
-        <ul id="tracking">
-          <li class="transaction">
+      <h2 class="heading__sub">History</h2>
+      <ul id="tracking">
+        <li class="transaction">
+          <button class="transaction__info">
             <span class="transaction__name">Marriage expenses</span>
-            <span class="transaction__amount">+5000</span>
-          </li>
-        </ul>
-      </section>
+            <span class="transaction__amount positive">+5000.00</span>
+          </button>
+          <button class="transaction__delete"></button>
+        </li>
+      </ul>
     </section>
-    <section class="popup">
-      <section id="create">
+    <section class="popup hide">
+      <section id="create" hidden>
         <h2 class="heading__sub">Add new transaction</h2>
         <form action="./my-handling-form-page" method="post">
           <ul>
@@ -62,10 +64,11 @@
           </ul>
         </form>
       </section>
-      <section id="detail">
+      <section id="detail" hidden>
         <h2 class="heading__sub">Marriage expenses</h2>
-        <h3 class="detail__amount">+5000</h3>
-        <h3 class="detail__description">Something...</h3>
+        <h3 class="detail__amount positive">+5000</h3>
+        <p class="detail__description">Something...</p>
+        <button class="detail__close">❌ Close</button>
       </section>
     </section>
   </body>
